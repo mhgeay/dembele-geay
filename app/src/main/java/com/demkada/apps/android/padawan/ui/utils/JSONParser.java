@@ -23,6 +23,9 @@ import org.apache.http.impl.client.DefaultHttpClient;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import android.content.Context;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.util.Log;
 
 public class JSONParser {
@@ -35,6 +38,18 @@ public class JSONParser {
     public JSONParser() {
 
     }
+
+    //Test Data connexion
+    public boolean isDataAvailable(Context appContext) {
+        ConnectivityManager cm =
+                (ConnectivityManager)appContext.getSystemService(Context.CONNECTIVITY_SERVICE);
+
+        NetworkInfo activeNetwork = cm.getActiveNetworkInfo();
+        boolean isConnected = activeNetwork != null &&
+                activeNetwork.isConnectedOrConnecting();
+        return  isConnected;
+    }
+
 
     // function get json from url
     // by making HTTP POST or GET mehtod

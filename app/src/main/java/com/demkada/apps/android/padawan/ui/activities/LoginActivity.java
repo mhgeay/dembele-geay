@@ -14,10 +14,13 @@ import android.animation.AnimatorListenerAdapter;
 import android.annotation.TargetApi;
 import android.app.Activity;
 import android.app.LoaderManager.LoaderCallbacks;
+import android.content.Context;
 import android.content.CursorLoader;
 import android.content.Intent;
 import android.content.Loader;
 import android.database.Cursor;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Build;
@@ -266,63 +269,68 @@ public class LoginActivity extends Activity implements LoaderCallbacks<Cursor> {
 	 */
 	public class UserLoginTask extends AsyncTask<Void, Void, Boolean> {
 
-		private final String mEmail;
-		private final String mPassword;
+        private final String mEmail;
+        private final String mPassword;
 
-		UserLoginTask(String email, String password) {
-			mEmail = email;
-			mPassword = password;
-		}
 
-		@Override
-		protected Boolean doInBackground(Void... params) {
+        UserLoginTask(String email, String password) {
+            mEmail = email;
+            mPassword = password;
+        }
+
+        @Override
+        protected Boolean doInBackground(Void... params) {
             int success;
             JSONObject user = new JSONObject();
             JSONObject userInfo = new JSONObject();
             List loginParams = new ArrayList();
 
-			try {
-                // Building Parameters
+            JSONObject json = null;
+            if (jsonParser.isDataAvailable(getApplicationContext())) {
 
-                //loginParams.add(new BasicNameValuePair("password", mPassword));
-                userInfo.put("password", mPassword);
-                userInfo.put("email", mEmail);
-                user.put("user", userInfo);
-                //loginParams.add(new BasicNameValuePair("user", user.toString()));
+                try {
+                    // Building Parameters
+
+                    //loginParams.add(new BasicNameValuePair("password", mPassword));
+                    userInfo.put("password", mPassword);
+                    userInfo.put("email", mEmail);
+                    user.put("user", userInfo);
+                    //loginParams.add(new BasicNameValuePair("user", user.toString()));
 
 
-                Log.d("request!", "starting");
-                // getting product details by making HTTP request
-                JSONObject json = jsonParser.makeHttpRequest(LOGIN_URL, "POST", userInfo.toString());
+                    Log.d("request!", "starting");
 
-                // check the log for json response
-                Log.d("Login attempt", json.toString());
+                    // getting product details by making HTTP request
+                    json = jsonParser.makeHttpRequest(LOGIN_URL, "POST", userInfo.toString());
 
-                // json success tag
-                success = json.getInt(TAG_SUCCESS);
-                if (success == 1) {
-                    Log.d("Login Successful!", json.toString());
-                    Intent intent = new Intent(LoginActivity.this, MainActivity.class);
-                    finish();
-                    startActivity(intent);
-                    return true;
-                }else{
-                    Log.d("Login Failure!", json.getString(TAG_MESSAGE));
-                    Intent intent = new Intent(LoginActivity.this, RegisterActivity.class);
-                    intent.putExtra("email", mEmail);
-                    intent.putExtra("password", mPassword);
-                    finish();
-                    startActivity(intent);
-                    return true;
+                    // check the log for json response
+                    Log.d("Login attempt", json.toString());
+
+                    // json success tag
+                    success = json.getInt(TAG_SUCCESS);
+                    if (success == 1) {
+                        Log.d("Login Successful!", json.toString());
+                        Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+                        finish();
+                        startActivity(intent);
+                        return true;
+                    } else {
+                        Log.d("Login Failure!", json.getString(TAG_MESSAGE));
+                        Intent intent = new Intent(LoginActivity.this, RegisterActivity.class);
+                        intent.putExtra("email", mEmail);
+                        intent.putExtra("password", mPassword);
+                        finish();
+                        startActivity(intent);
+                        return true;
+                    }
+                } catch (JSONException e) {
+                    return false;
                 }
-			} catch (JSONException e) {
-				return false;
-			}
+            }
+            else
+                return false;
+        }
 
-
-			// TODO: register the new account here.
-			//return true;
-		}
 
 		@Override
 		protected void onPostExecute(final Boolean success) {
@@ -333,7 +341,7 @@ public class LoginActivity extends Activity implements LoaderCallbacks<Cursor> {
 				finish();
 			} else {
 				mPasswordView
-						.setError(getString(R.string.error_incorrect_password));
+						.setError(getString(R.string.error_network_connexion));
 				mPasswordView.requestFocus();
 			}
 		}

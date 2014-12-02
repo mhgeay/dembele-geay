@@ -1479,10 +1479,10 @@ containing a value of this type.
         public static final int app_name=0x7f0a0014;
         public static final int error_field_required=0x7f0a0015;
         public static final int error_field_required_signup=0x7f0a0016;
-        public static final int error_incorrect_password=0x7f0a0017;
-        public static final int error_incorrect_password_signup=0x7f0a0018;
-        public static final int error_invalid_email=0x7f0a0019;
-        public static final int error_invalid_password=0x7f0a001a;
+        public static final int error_incorrect_password_signup=0x7f0a0017;
+        public static final int error_invalid_email=0x7f0a0018;
+        public static final int error_invalid_password=0x7f0a0019;
+        public static final int error_network_connexion=0x7f0a001a;
         public static final int error_on_signup=0x7f0a001b;
         public static final int first_name=0x7f0a001c;
         public static final int hello_world=0x7f0a001d;

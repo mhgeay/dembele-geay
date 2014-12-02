@@ -222,47 +222,50 @@ public class RegisterActivity extends Activity {
             JSONObject userInfo = new JSONObject();
             List loginParams = new ArrayList();
 
-            try {
-                // Building Parameters
+            JSONObject json = null;
+            if (jsonParser.isDataAvailable(getApplicationContext())) {
 
-                //loginParams.add(new BasicNameValuePair("password", mPassword));
-                userInfo.put("first_name", mFirstName);
-                userInfo.put("last_name", mLastName);
-                userInfo.put("email", mEmail);
-                userInfo.put("password", mPassword);
-                userInfo.put("password_confirmation", mPasswordConfirmation);
-                user.put("user", userInfo);
-                //loginParams.add(new BasicNameValuePair("user", user.toString()));
+                try {
+                    // Building Parameters
 
-                Log.i("UserInfo", user.toString());
+                    //loginParams.add(new BasicNameValuePair("password", mPassword));
+                    userInfo.put("first_name", mFirstName);
+                    userInfo.put("last_name", mLastName);
+                    userInfo.put("email", mEmail);
+                    userInfo.put("password", mPassword);
+                    userInfo.put("password_confirmation", mPasswordConfirmation);
+                    user.put("user", userInfo);
+                    //loginParams.add(new BasicNameValuePair("user", user.toString()));
+
+                    Log.i("UserInfo", user.toString());
 
 
-                Log.d("request!", "starting");
-                // getting product details by making HTTP request
-                JSONObject json = jsonParser.makeHttpRequest(SIGNUP_URL, "POST", user.toString());
+                    Log.d("request!", "starting");
+                    // getting product details by making HTTP request
+                    json = jsonParser.makeHttpRequest(SIGNUP_URL, "POST", user.toString());
 
-                // check the log for json response
-                Log.d("Sign UP attempt", json.toString());
+                    // check the log for json response
+                    Log.d("Sign UP attempt", json.toString());
 
-                // json success tag
-                success = json.getInt(TAG_SUCCESS);
-                if (success == 1) {
-                    Log.d("Register Successful!", json.toString());
-                    Intent intent = new Intent(RegisterActivity.this, MainActivity.class);
-                    finish();
-                    startActivity(intent);
-                    return true;
-                }else{
-                    Log.d("Sign up Failure!", json.getString(TAG_MESSAGE));
+                    // json success tag
+                    success = json.getInt(TAG_SUCCESS);
+                    if (success == 1) {
+                        Log.d("Register Successful!", json.toString());
+                        Intent intent = new Intent(RegisterActivity.this, MainActivity.class);
+                        finish();
+                        startActivity(intent);
+                        return true;
+                    } else {
+                        Log.d("Sign up Failure!", json.getString(TAG_MESSAGE));
+                        return false;
+                    }
+                } catch (JSONException e) {
                     return false;
                 }
-            } catch (JSONException e) {
-                return false;
             }
 
-
-            // TODO: register the new account here.
-            //return true;
+            else
+                return false;
         }
 
         @Override

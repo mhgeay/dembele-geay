@@ -9,7 +9,7 @@
     <string name="action_sign_in_short">Se connecter</string>
     <string name="error_invalid_email">Cet email n\'est pas valide</string>
     <string name="error_invalid_password">Cet mdp est trop court (4)</string>
-    <string name="error_incorrect_password">Cet mot de passe n\'est pas correct</string>
+    <string name="error_network_connexion">Problèmes d\'accès à Internet</string>
     <string name="error_field_required">Cet champ est réquis</string>
 
 </resources>
