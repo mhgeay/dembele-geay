@@ -35,6 +35,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ff7ef293-91dd-4d70-a3c9-0afc599e9f44" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/demkada/apps/android/padawan/ui/utils/JSONParser.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/demkada/apps/android/padawan/ui/utils/JSONParser.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/demkada/apps/android/padawan/ui/activities/LoginActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/demkada/apps/android/padawan/ui/activities/LoginActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/demkada/apps/android/padawan/ui/activities/RegisterActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/demkada/apps/android/padawan/ui/activities/RegisterActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="padawan-android.iws" />
@@ -46,6 +49,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="Commander">
+    <leftPanel />
+    <rightPanel />
+    <splitter proportion="0.5" />
+  </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
@@ -58,14 +66,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="JSONParser.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="JSONParser.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/demkada/apps/android/padawan/ui/utils/JSONParser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.10059172" vertical-offset="0" max-vertical-offset="2193">
-              <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="49.17857" vertical-offset="1581" max-vertical-offset="2125">
+              <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -73,23 +79,24 @@
       <file leaf-file-name="LoginActivity.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/demkada/apps/android/padawan/ui/activities/LoginActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.607143" vertical-offset="4036" max-vertical-offset="5423">
-              <caret line="287" column="12" selection-start-line="287" selection-start-column="12" selection-end-line="288" selection-end-column="70" />
+            <state vertical-scroll-proportion="-2.4285715" vertical-offset="0" max-vertical-offset="6069">
+              <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
               <folding>
-                <element signature="e#2565#2852#0" expanded="true" />
-                <element signature="e#2845#2846#0" expanded="true" />
-                <element signature="e#2976#3077#0" expanded="true" />
-                <element signature="e#3072#3073#0" expanded="true" />
-                <element signature="e#4017#4059#0" expanded="true" />
-                <element signature="e#4210#4250#0" expanded="true" />
-                <element signature="e#4358#4397#0" expanded="true" />
-                <element signature="e#5738#5934#0" expanded="true" />
-                <element signature="e#5926#5927#0" expanded="true" />
-                <element signature="e#6101#6296#0" expanded="true" />
-                <element signature="e#6288#6289#0" expanded="true" />
-                <element signature="e#7371#7379#0" expanded="true" />
-                <element signature="e#8069#8077#0" expanded="true" />
-                <element signature="e#10930#10973#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#2327#2614#0" expanded="true" />
+                <element signature="e#2607#2608#0" expanded="true" />
+                <element signature="e#2738#2839#0" expanded="true" />
+                <element signature="e#2834#2835#0" expanded="true" />
+                <element signature="e#3779#3821#0" expanded="true" />
+                <element signature="e#3972#4012#0" expanded="true" />
+                <element signature="e#4120#4159#0" expanded="true" />
+                <element signature="e#5414#5610#0" expanded="true" />
+                <element signature="e#5602#5603#0" expanded="true" />
+                <element signature="e#5777#5972#0" expanded="true" />
+                <element signature="e#5964#5965#0" expanded="true" />
+                <element signature="e#7047#7055#0" expanded="true" />
+                <element signature="e#7747#7755#0" expanded="true" />
+                <element signature="e#10603#10646#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -115,23 +122,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RegisterActivity.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="RegisterActivity.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/demkada/apps/android/padawan/ui/activities/RegisterActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-60.035713" vertical-offset="2518" max-vertical-offset="5049">
-              <caret line="247" column="45" selection-start-line="247" selection-start-column="45" selection-end-line="247" selection-end-column="45" />
+            <state vertical-scroll-proportion="-2.6016948" vertical-offset="4643" max-vertical-offset="4879">
+              <caret line="237" column="22" selection-start-line="237" selection-start-column="22" selection-end-line="237" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2437#2927#0" expanded="true" />
-                <element signature="e#2908#2909#0" expanded="true" />
-                <element signature="e#3062#3216#0" expanded="true" />
-                <element signature="e#3205#3206#0" expanded="true" />
-                <element signature="e#4416#4467#0" expanded="true" />
-                <element signature="e#6099#6415#0" expanded="true" />
-                <element signature="e#6392#6393#0" expanded="true" />
-                <element signature="e#6630#6942#0" expanded="true" />
-                <element signature="e#6919#6920#0" expanded="true" />
-                <element signature="e#10385#10420#0" expanded="true" />
+                <element signature="e#2117#2607#0" expanded="true" />
+                <element signature="e#2588#2589#0" expanded="true" />
+                <element signature="e#2742#2896#0" expanded="true" />
+                <element signature="e#2885#2886#0" expanded="true" />
+                <element signature="e#4096#4147#0" expanded="true" />
+                <element signature="e#5706#6022#0" expanded="true" />
+                <element signature="e#5999#6000#0" expanded="true" />
+                <element signature="e#6237#6549#0" expanded="true" />
+                <element signature="e#6526#6527#0" expanded="true" />
+                <element signature="e#9991#10026#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -868,11 +875,11 @@
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_resgister.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/strings_activity_register.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/demkada/apps/android/padawan/ui/utils/JSONParser.java" />
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/values/strings_activity_login.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/demkada/apps/android/padawan/ui/utils/JSONParser.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/demkada/apps/android/padawan/ui/activities/LoginActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/demkada/apps/android/padawan/ui/activities/RegisterActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/values/strings_activity_login.xml" />
       </list>
     </option>
   </component>
@@ -1136,7 +1143,11 @@
       <created>1417544521453</created>
       <updated>1417544521453</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Bug fixed in network connexion state checking before any HTTP request">
+      <created>1417544595202</created>
+      <updated>1417544595202</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1155,11 +1166,11 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32879046" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32879046" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32879046" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32879046" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32879046" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5025554" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.5025554" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24962178" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Memory Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
@@ -1322,49 +1333,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/demkada/apps/android/padawan/ui/activities/LoginActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.607143" vertical-offset="4036" max-vertical-offset="5423">
-          <caret line="287" column="12" selection-start-line="287" selection-start-column="12" selection-end-line="288" selection-end-column="70" />
-          <folding>
-            <element signature="e#2565#2852#0" expanded="true" />
-            <element signature="e#2845#2846#0" expanded="true" />
-            <element signature="e#2976#3077#0" expanded="true" />
-            <element signature="e#3072#3073#0" expanded="true" />
-            <element signature="e#4017#4059#0" expanded="true" />
-            <element signature="e#4210#4250#0" expanded="true" />
-            <element signature="e#4358#4397#0" expanded="true" />
-            <element signature="e#5738#5934#0" expanded="true" />
-            <element signature="e#5926#5927#0" expanded="true" />
-            <element signature="e#6101#6296#0" expanded="true" />
-            <element signature="e#6288#6289#0" expanded="true" />
-            <element signature="e#7371#7379#0" expanded="true" />
-            <element signature="e#8069#8077#0" expanded="true" />
-            <element signature="e#10930#10973#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/demkada/apps/android/padawan/ui/activities/RegisterActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-60.035713" vertical-offset="2518" max-vertical-offset="5049">
-          <caret line="247" column="45" selection-start-line="247" selection-start-column="45" selection-end-line="247" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2437#2927#0" expanded="true" />
-            <element signature="e#2908#2909#0" expanded="true" />
-            <element signature="e#3062#3216#0" expanded="true" />
-            <element signature="e#3205#3206#0" expanded="true" />
-            <element signature="e#4416#4467#0" expanded="true" />
-            <element signature="e#6099#6415#0" expanded="true" />
-            <element signature="e#6392#6393#0" expanded="true" />
-            <element signature="e#6630#6942#0" expanded="true" />
-            <element signature="e#6919#6920#0" expanded="true" />
-            <element signature="e#10385#10420#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings_activity_login.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="357">
@@ -1373,12 +1341,54 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/demkada/apps/android/padawan/ui/utils/JSONParser.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/demkada/apps/android/padawan/ui/activities/LoginActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.10059172" vertical-offset="0" max-vertical-offset="2193">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+        <state vertical-scroll-proportion="-2.4285715" vertical-offset="0" max-vertical-offset="6069">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#2327#2614#0" expanded="true" />
+            <element signature="e#2607#2608#0" expanded="true" />
+            <element signature="e#2738#2839#0" expanded="true" />
+            <element signature="e#2834#2835#0" expanded="true" />
+            <element signature="e#3779#3821#0" expanded="true" />
+            <element signature="e#3972#4012#0" expanded="true" />
+            <element signature="e#4120#4159#0" expanded="true" />
+            <element signature="e#5414#5610#0" expanded="true" />
+            <element signature="e#5602#5603#0" expanded="true" />
+            <element signature="e#5777#5972#0" expanded="true" />
+            <element signature="e#5964#5965#0" expanded="true" />
+            <element signature="e#7047#7055#0" expanded="true" />
+            <element signature="e#7747#7755#0" expanded="true" />
+            <element signature="e#10603#10646#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/demkada/apps/android/padawan/ui/utils/JSONParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="49.17857" vertical-offset="1581" max-vertical-offset="2125">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/demkada/apps/android/padawan/ui/activities/RegisterActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.6016948" vertical-offset="4643" max-vertical-offset="4879">
+          <caret line="237" column="22" selection-start-line="237" selection-start-column="22" selection-end-line="237" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2117#2607#0" expanded="true" />
+            <element signature="e#2588#2589#0" expanded="true" />
+            <element signature="e#2742#2896#0" expanded="true" />
+            <element signature="e#2885#2886#0" expanded="true" />
+            <element signature="e#4096#4147#0" expanded="true" />
+            <element signature="e#5706#6022#0" expanded="true" />
+            <element signature="e#5999#6000#0" expanded="true" />
+            <element signature="e#6237#6549#0" expanded="true" />
+            <element signature="e#6526#6527#0" expanded="true" />
+            <element signature="e#9991#10026#0" expanded="true" />
           </folding>
         </state>
       </provider>

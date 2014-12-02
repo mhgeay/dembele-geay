@@ -1,12 +1,14 @@
 package com.demkada.apps.android.padawan.ui.activities;
 
+/**
+ * Created by kadary on 02/12/2014.
+ * Login Activity
+ */
+
 import java.util.ArrayList;
 import java.util.List;
 
 import com.demkada.apps.android.padawan.R;
-import com.demkada.apps.android.padawan.R.id;
-import com.demkada.apps.android.padawan.R.layout;
-import com.demkada.apps.android.padawan.R.string;
 import com.demkada.apps.android.padawan.ui.utils.JSONParser;
 
 import android.animation.Animator;
@@ -14,13 +16,10 @@ import android.animation.AnimatorListenerAdapter;
 import android.annotation.TargetApi;
 import android.app.Activity;
 import android.app.LoaderManager.LoaderCallbacks;
-import android.content.Context;
 import android.content.CursorLoader;
 import android.content.Intent;
 import android.content.Loader;
 import android.database.Cursor;
-import android.net.ConnectivityManager;
-import android.net.NetworkInfo;
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Build;
@@ -38,7 +37,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import org.apache.http.message.BasicNameValuePair;
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -160,12 +158,12 @@ public class LoginActivity extends Activity implements LoaderCallbacks<Cursor> {
 	}
 
 	private boolean isEmailValid(String email) {
-		// TODO: Replace this with your own logic
+
 		return email.contains("@");
 	}
 
 	private boolean isPasswordValid(String password) {
-		// TODO: Replace this with your own logic
+
 		return password.length() > 4;
 	}
 
@@ -249,7 +247,7 @@ public class LoginActivity extends Activity implements LoaderCallbacks<Cursor> {
 				ContactsContract.CommonDataKinds.Email.IS_PRIMARY, };
 
 		int ADDRESS = 0;
-		int IS_PRIMARY = 1;
+		//int IS_PRIMARY = 1;
 	}
 
 	private void addEmailsToAutoComplete(List<String> emailAddressCollection) {
@@ -283,9 +281,9 @@ public class LoginActivity extends Activity implements LoaderCallbacks<Cursor> {
             int success;
             JSONObject user = new JSONObject();
             JSONObject userInfo = new JSONObject();
-            List loginParams = new ArrayList();
+            //List loginParams = new ArrayList();
 
-            JSONObject json = null;
+            JSONObject json;
             if (jsonParser.isDataAvailable(getApplicationContext())) {
 
                 try {

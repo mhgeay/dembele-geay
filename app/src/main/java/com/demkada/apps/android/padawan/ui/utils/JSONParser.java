@@ -1,23 +1,21 @@
 package com.demkada.apps.android.padawan.ui.utils;
 
 /**
- * Created by kadary on 01/12/2014.
+ * Created by kadary on 02/12/2014.
+ * Custom JsonParser
  */
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.UnsupportedEncodingException;
-import java.util.List;
+
 
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
-import org.apache.http.NameValuePair;
 import org.apache.http.client.ClientProtocolException;
-import org.apache.http.client.entity.UrlEncodedFormEntity;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.methods.HttpPost;
-import org.apache.http.client.utils.URLEncodedUtils;
 import org.apache.http.entity.StringEntity;
 import org.apache.http.impl.client.DefaultHttpClient;
 import org.json.JSONException;
@@ -45,9 +43,7 @@ public class JSONParser {
                 (ConnectivityManager)appContext.getSystemService(Context.CONNECTIVITY_SERVICE);
 
         NetworkInfo activeNetwork = cm.getActiveNetworkInfo();
-        boolean isConnected = activeNetwork != null &&
-                activeNetwork.isConnectedOrConnecting();
-        return  isConnected;
+        return activeNetwork != null && activeNetwork.isConnectedOrConnecting();
     }
 
 
@@ -60,7 +56,7 @@ public class JSONParser {
         try {
 
             // check for request method
-            if(method == "POST"){
+            if(method.equals("POST")){
                 // request method is POST
                 // defaultHttpClient
                 DefaultHttpClient httpClient = new DefaultHttpClient();
@@ -74,7 +70,7 @@ public class JSONParser {
                 HttpEntity httpEntity = httpResponse.getEntity();
                 is = httpEntity.getContent();
 
-            }else if(method == "GET"){
+            }else if(method.equals("GET")){
                 // request method is GET
                 DefaultHttpClient httpClient = new DefaultHttpClient();
                 //String paramString = URLEncodedUtils.format(params, "utf-8");
@@ -98,9 +94,9 @@ public class JSONParser {
             BufferedReader reader = new BufferedReader(new InputStreamReader(
                     is, "iso-8859-1"), 8);
             StringBuilder sb = new StringBuilder();
-            String line = null;
+            String line;
             while ((line = reader.readLine()) != null) {
-                Log.i("Response", line);
+                //Log.i("Response", line);
                 sb.append(line + "\n");
             }
             is.close();

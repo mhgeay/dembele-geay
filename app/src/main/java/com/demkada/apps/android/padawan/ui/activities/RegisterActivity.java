@@ -1,28 +1,24 @@
 package com.demkada.apps.android.padawan.ui.activities;
 
+/**
+ * Created by kadary on 02/12/2014.
+ * Register Activity
+ */
+
+
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
 import android.annotation.TargetApi;
 import android.app.Activity;
-import android.app.LoaderManager;
-import android.content.CursorLoader;
 import android.content.Intent;
-import android.content.Loader;
-import android.database.Cursor;
-import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Bundle;
-import android.provider.ContactsContract;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.KeyEvent;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.inputmethod.EditorInfo;
-import android.widget.ArrayAdapter;
-import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -33,8 +29,6 @@ import com.demkada.apps.android.padawan.ui.utils.JSONParser;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import java.util.ArrayList;
-import java.util.List;
 
 public class RegisterActivity extends Activity {
 
@@ -146,11 +140,7 @@ public class RegisterActivity extends Activity {
 
     private boolean isPasswordValid(String passwordToConfirm) {
         String password = extras.getString("password");
-        if (passwordToConfirm.equals(password)) {
-            return true;
-        }
-        else
-            return false;
+        return passwordToConfirm.equals(password);
     }
 
     /**
@@ -220,9 +210,9 @@ public class RegisterActivity extends Activity {
             int success;
             JSONObject user = new JSONObject();
             JSONObject userInfo = new JSONObject();
-            List loginParams = new ArrayList();
+            //List loginParams = new ArrayList();
 
-            JSONObject json = null;
+            JSONObject json;
             if (jsonParser.isDataAvailable(getApplicationContext())) {
 
                 try {
@@ -237,7 +227,7 @@ public class RegisterActivity extends Activity {
                     user.put("user", userInfo);
                     //loginParams.add(new BasicNameValuePair("user", user.toString()));
 
-                    Log.i("UserInfo", user.toString());
+                    //Log.i("UserInfo", user.toString());
 
 
                     Log.d("request!", "starting");
@@ -245,7 +235,7 @@ public class RegisterActivity extends Activity {
                     json = jsonParser.makeHttpRequest(SIGNUP_URL, "POST", user.toString());
 
                     // check the log for json response
-                    Log.d("Sign UP attempt", json.toString());
+                    //Log.d("Sign UP attempt", json.toString());
 
                     // json success tag
                     success = json.getInt(TAG_SUCCESS);
