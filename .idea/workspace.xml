@@ -35,9 +35,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ff7ef293-91dd-4d70-a3c9-0afc599e9f44" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/demkada/apps/android/padawan/ui/utils/JSONParser.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/demkada/apps/android/padawan/ui/utils/JSONParser.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/demkada/apps/android/padawan/ui/activities/LoginActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/demkada/apps/android/padawan/ui/activities/LoginActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/demkada/apps/android/padawan/ui/activities/RegisterActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/demkada/apps/android/padawan/ui/activities/RegisterActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="padawan-android.iws" />
@@ -154,6 +151,7 @@
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
       <list>
+        <option value="kadary DEMBELE" />
         <option value="kadary" />
       </list>
     </option>
@@ -1147,12 +1145,16 @@
       <created>1417544595202</created>
       <updated>1417544595202</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Source code cleanning">
+      <created>1417546026824</created>
+      <updated>1417546026824</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1234,7 +1236,8 @@
       <TodoPanelSettings />
     </option>
     <MESSAGE value="Bug fixed in network connexion state checking before any HTTP request" />
-    <option name="LAST_COMMIT_MESSAGE" value="Bug fixed in network connexion state checking before any HTTP request" />
+    <MESSAGE value="Source code cleanning" />
+    <option name="LAST_COMMIT_MESSAGE" value="Source code cleanning" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />

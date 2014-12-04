@@ -178,16 +178,12 @@
     <!-- From: file:/C:/Users/kadary/workspace/padawan-android/app/src/main/res/values/strings_activity_register.xml -->
     <eat-comment/>
     <string name="error_field_required_signup">Ce champ est réquis</string>
-    <!-- From: file:/C:/Users/kadary/workspace/padawan-android/app/src/main/res/values/strings_activity_login.xml -->
-    <eat-comment/>
-    <string name="error_incorrect_password">Cet mot de passe n\'est pas correct</string>
-    <!-- From: file:/C:/Users/kadary/workspace/padawan-android/app/src/main/res/values/strings_activity_register.xml -->
-    <eat-comment/>
     <string name="error_incorrect_password_signup">Les mots de passe ne correspondent pas</string>
     <!-- From: file:/C:/Users/kadary/workspace/padawan-android/app/src/main/res/values/strings_activity_login.xml -->
     <eat-comment/>
     <string name="error_invalid_email">Cet email n\'est pas valide</string>
     <string name="error_invalid_password">Cet mdp est trop court (4)</string>
+    <string name="error_network_connexion">Problèmes d\'accès à Internet</string>
     <!-- From: file:/C:/Users/kadary/workspace/padawan-android/app/src/main/res/values/strings_activity_register.xml -->
     <eat-comment/>
     <string name="error_on_signup">Problème de création de compte</string>
