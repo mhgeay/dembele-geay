@@ -9,7 +9,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.demkada.apps.android.padawan.R;
-import com.demkada.apps.android.padawan.ui.utils.JSONParser;
+import com.demkada.apps.android.padawan.utils.json.JSONParser;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;

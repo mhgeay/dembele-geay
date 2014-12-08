@@ -24,7 +24,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 import com.demkada.apps.android.padawan.R;
-import com.demkada.apps.android.padawan.ui.utils.JSONParser;
+import com.demkada.apps.android.padawan.utils.json.JSONParser;
 
 import org.json.JSONException;
 import org.json.JSONObject;

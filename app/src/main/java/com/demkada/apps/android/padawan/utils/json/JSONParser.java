@@ -1,4 +1,4 @@
-package com.demkada.apps.android.padawan.ui.utils;
+package com.demkada.apps.android.padawan.utils.json;
 
 /**
  * Created by kadary on 02/12/2014.
