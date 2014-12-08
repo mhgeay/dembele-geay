@@ -13,8 +13,16 @@ import com.demkada.apps.android.padawan.ui.fragments.MessagesFragment;
  */
 public class TabsPagerAdapter extends FragmentPagerAdapter {
 
+    private int totalTabs;
+
     public TabsPagerAdapter(FragmentManager fm) {
+
         super(fm);
+    }
+
+    public TabsPagerAdapter(FragmentManager fm, int totalTabs) {
+        super(fm);
+        this.totalTabs = totalTabs;
     }
 
     @Override
@@ -38,7 +46,7 @@ public class TabsPagerAdapter extends FragmentPagerAdapter {
     @Override
     public int getCount() {
         // get item count - equal to number of tabs
-        return 3;
+        return totalTabs;
     }
 
 }
