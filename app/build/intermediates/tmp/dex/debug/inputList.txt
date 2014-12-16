@@ -1,0 +1,4 @@
+/Users/mhgeay/padawan-android/app/build/intermediates/classes/debug
+/Users/mhgeay/padawan-android/app/build/intermediates/pre-dexed/debug/support-annotations-21.0.0-b7fcd2ad5a7a95da0d9dcce056a18f9e7afd5811.jar
+/Users/mhgeay/padawan-android/app/build/intermediates/pre-dexed/debug/internal_impl-21.0.0-d7d5a341fd6bc44deceb581405e0cbd60b232f0b.jar
+/Users/mhgeay/padawan-android/app/build/intermediates/pre-dexed/debug/classes-3b6d71e5c92885531629fc8fbe4b32952894acda.jar
