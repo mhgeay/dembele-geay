@@ -35,4 +35,4 @@
     <item android:state_focused="true" android:state_selected="false" android:state_pressed="true" android:drawable="@drawable/tab_unselected_pressed_padawan" />
     <item android:state_focused="true" android:state_selected="true"  android:state_pressed="true" android:drawable="@drawable/tab_selected_pressed_padawan" />
 </selector>
-<!-- From: file:/Users/mhgeay/padawan-android/app/src/main/res/drawable/tab_indicator_ab_padawan.xml -->
+<!-- From: file:/C:/Users/kadary/workspace/padawan-android/app/src/main/res/drawable/tab_indicator_ab_padawan.xml -->

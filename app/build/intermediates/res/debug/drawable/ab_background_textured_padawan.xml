@@ -18,4 +18,4 @@
 
 <bitmap xmlns:android="http://schemas.android.com/apk/res/android"
     android:src="@drawable/ab_texture_tile_padawan"
-    android:tileMode="repeat" /><!-- From: file:/Users/mhgeay/padawan-android/app/src/main/res/drawable/ab_background_textured_padawan.xml -->
+    android:tileMode="repeat" /><!-- From: file:/C:/Users/kadary/workspace/padawan-android/app/src/main/res/drawable/ab_background_textured_padawan.xml -->

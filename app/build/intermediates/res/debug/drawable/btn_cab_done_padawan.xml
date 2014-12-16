@@ -25,4 +25,4 @@
     <item android:state_enabled="true"
         android:drawable="@drawable/btn_cab_done_default_padawan" />
 </selector>
-<!-- From: file:/Users/mhgeay/padawan-android/app/src/main/res/drawable/btn_cab_done_padawan.xml -->
+<!-- From: file:/C:/Users/kadary/workspace/padawan-android/app/src/main/res/drawable/btn_cab_done_padawan.xml -->

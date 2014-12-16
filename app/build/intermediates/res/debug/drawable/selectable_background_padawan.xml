@@ -22,4 +22,4 @@
     <item android:state_pressed="false" android:state_focused="true" android:drawable="@drawable/list_focused_padawan" />
     <item android:state_pressed="true" android:drawable="@drawable/list_pressed_padawan" />
     <item android:drawable="@android:color/transparent" />
-</selector><!-- From: file:/Users/mhgeay/padawan-android/app/src/main/res/drawable/selectable_background_padawan.xml -->
+</selector><!-- From: file:/C:/Users/kadary/workspace/padawan-android/app/src/main/res/drawable/selectable_background_padawan.xml -->
