@@ -8,7 +8,8 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.demkada.apps.android.padawan.ui.activities.LoginActivity" >
+    tools:context="com.demkada.apps.android.padawan.ui.activities.LoginActivity"
+    android:background="#333">
 
     <!-- Login progress -->
 
@@ -23,13 +24,14 @@
     <ScrollView
         android:id="@+id/login_form"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" >
+        android:layout_height="match_parent">
 
         <LinearLayout
             android:id="@+id/email_login_form"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" >
+            android:orientation="vertical"
+            android:weightSum="1">
 
             <AutoCompleteTextView
                 android:id="@+id/email"
@@ -38,7 +40,8 @@
                 android:hint="@string/prompt_email"
                 android:inputType="textEmailAddress"
                 android:maxLines="1"
-                android:singleLine="true" />
+                android:singleLine="true"
+                android:textColor="#EEE" />
 
             <EditText
                 android:id="@+id/password"
@@ -50,7 +53,9 @@
                 android:imeOptions="actionUnspecified"
                 android:inputType="textPassword"
                 android:maxLines="1"
-                android:singleLine="true" />
+                android:singleLine="true"
+                android:textColor="#EEE"
+                android:textIsSelectable="true" />
 
             <Button
                 android:id="@+id/email_sign_in_button"
@@ -59,7 +64,19 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:text="@string/action_sign_in"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:background="#111"
+                android:textColor="#BBB" />
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/ic_launcher"
+                android:layout_weight="17.31"
+                android:layout_gravity="center_horizontal"
+                android:baselineAlignBottom="true"
+                android:contentDescription="Logo Dapawan"
+                android:cropToPadding="false" />
         </LinearLayout>
     </ScrollView>
 

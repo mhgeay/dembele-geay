@@ -43,11 +43,13 @@
         </activity>
         <activity
             android:name="com.demkada.apps.android.padawan.ui.activities.MainActivity"
-            android:label="@string/title_activity_main" >
+            android:label="@string/title_activity_main"
+            android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name=".ui.activities.RegisterActivity"
-            android:label="@string/title_activity_resgister" >
+            android:label="@string/title_activity_resgister"
+            android:screenOrientation="portrait" >
         </activity>
     </application>
 

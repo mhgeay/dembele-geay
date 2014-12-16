@@ -9,7 +9,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.demkada.apps.android.padawan.R;
-import com.demkada.apps.android.padawan.ui.utils.JSONParser;
+import com.demkada.apps.android.padawan.utils.json.JSONParser;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
@@ -163,8 +163,11 @@ public class LoginActivity extends Activity implements LoaderCallbacks<Cursor> {
 	}
 
 	private boolean isPasswordValid(String password) {
-
-		return password.length() > 4;
+        if (password == "" || password.length()<4) {
+            return false;
+        }
+        else
+            return true;
 	}
 
 	/**

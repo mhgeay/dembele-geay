@@ -1,0 +1,4 @@
+C:\Users\kadary\workspace\padawan-android\app\build\intermediates\classes\debug
+C:\Users\kadary\workspace\padawan-android\app\build\intermediates\pre-dexed\debug\support-annotations-21.0.0-f113f1744040ad88f2d7bed768a0f40873b70031.jar
+C:\Users\kadary\workspace\padawan-android\app\build\intermediates\pre-dexed\debug\internal_impl-21.0.0-bf3d051b9132a640301461bca717ab27af8ea28c.jar
+C:\Users\kadary\workspace\padawan-android\app\build\intermediates\pre-dexed\debug\classes-cf6b9beeb7331cd624b4e5c983bcb2f5e48ce75c.jar
