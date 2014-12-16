@@ -163,8 +163,11 @@ public class LoginActivity extends Activity implements LoaderCallbacks<Cursor> {
 	}
 
 	private boolean isPasswordValid(String password) {
-
-		return password.length() > 4;
+        if (password == "" || password.length()<4) {
+            return false;
+        }
+        else
+            return true;
 	}
 
 	/**

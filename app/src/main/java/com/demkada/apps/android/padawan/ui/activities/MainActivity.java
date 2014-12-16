@@ -1,6 +1,7 @@
 package com.demkada.apps.android.padawan.ui.activities;
 
 import android.app.ActionBar;
+import android.app.Activity;
 import android.content.Intent;
 import android.content.res.Configuration;
 import android.content.res.TypedArray;
@@ -52,7 +53,7 @@ public class MainActivity extends FragmentActivity {
     private ViewPager viewPager;
     private TabsPagerAdapter mAdapter;
     private ActionBar actionBar;
-    private String[] tabs = { "Mûr", "Messages", "Amis" };
+    private String[] tabs = { "Mur", "Messages", "Amis" };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -254,6 +255,7 @@ public class MainActivity extends FragmentActivity {
         // update the main content by replacing fragments
         Fragment fragment = null;
         FragmentActivity activity = null;
+         Activity activite=null;
         switch (position) {
             case 0:
                 //fragment = new FeedsFragment();
@@ -271,7 +273,7 @@ public class MainActivity extends FragmentActivity {
                 //fragment = new PagesFragment();
                 break;
             case 5:
-                //fragment = new WhatsHotFragment();
+                activite = new LoginActivity();
                 break;
 
             default:
@@ -289,13 +291,19 @@ public class MainActivity extends FragmentActivity {
             setTitle(navMenuTitles[position]);
             mDrawerLayout.closeDrawer(mDrawerList);
         }
-        /*
-        else if(activity != null) {
-            Intent intent = new Intent(MainActivity.this, HomeActivity.class);
+
+/*        else if(activity != null) {
+            Intent intent = new Intent(getApplicationContext(), activity.getClass());
+            finish();
+            startActivity(intent);
+        }*/
+
+        else if(activite != null) {
+            Intent intent = new Intent(getApplicationContext(), activite.getClass());
             finish();
             startActivity(intent);
         }
-        */
+
         else {
             // error in creating fragment
             Log.e("MainActivity", "Error in creating fragment");

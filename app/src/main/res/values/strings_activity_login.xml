@@ -8,8 +8,8 @@
     <string name="action_sign_in">Se connecter ou S\'inscrire</string>
     <string name="action_sign_in_short">Se connecter</string>
     <string name="error_invalid_email">Cet email n\'est pas valide</string>
-    <string name="error_invalid_password">Cet mdp est trop court (4)</string>
-    <string name="error_network_connexion">Problèmes d\'accès à Internet</string>
-    <string name="error_field_required">Cet champ est réquis</string>
+    <string name="error_invalid_password">Ce mdp est trop court (4)</string>
+    <string name="error_network_connexion">Internet recquis/Problème serveur</string>
+    <string name="error_field_required">Ce champ est réquis</string>
 
 </resources>
