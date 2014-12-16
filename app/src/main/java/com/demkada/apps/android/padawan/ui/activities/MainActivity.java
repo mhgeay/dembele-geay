@@ -195,7 +195,7 @@ public class MainActivity extends FragmentActivity {
 
         if (savedInstanceState == null) {
             // on first time display view for first nav item
-            displayView(0);
+            //displayView(0);
         }
     }
 
@@ -208,7 +208,7 @@ public class MainActivity extends FragmentActivity {
         public void onItemClick(AdapterView<?> parent, View view, int position,
                                 long id) {
             // display view for selected nav drawer item
-            //displayView(position);
+            displayView(position);
         }
     }
 
@@ -255,9 +255,14 @@ public class MainActivity extends FragmentActivity {
         // update the main content by replacing fragments
         Fragment fragment = null;
         FragmentActivity activity = null;
+<<<<<<< HEAD
          Activity activite=null;
+=======
+        Activity myActivity = null;
+>>>>>>> 1066db1086a0d35c84a2181536aea8d689cf5694
         switch (position) {
             case 0:
+                activity = new MainActivity();
                 //fragment = new FeedsFragment();
                 break;
             case 1:
@@ -273,7 +278,11 @@ public class MainActivity extends FragmentActivity {
                 //fragment = new PagesFragment();
                 break;
             case 5:
+<<<<<<< HEAD
                 activite = new LoginActivity();
+=======
+                myActivity = new LoginActivity();
+>>>>>>> 1066db1086a0d35c84a2181536aea8d689cf5694
                 break;
 
             default:
@@ -292,6 +301,7 @@ public class MainActivity extends FragmentActivity {
             mDrawerLayout.closeDrawer(mDrawerList);
         }
 
+<<<<<<< HEAD
 /*        else if(activity != null) {
             Intent intent = new Intent(getApplicationContext(), activity.getClass());
             finish();
@@ -300,6 +310,16 @@ public class MainActivity extends FragmentActivity {
 
         else if(activite != null) {
             Intent intent = new Intent(getApplicationContext(), activite.getClass());
+=======
+        else if(activity != null) {
+            Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+            finish();
+            startActivity(intent);
+        }
+
+        else if(myActivity != null) {
+            Intent intent = new Intent(getApplicationContext(), myActivity.getClass());
+>>>>>>> 1066db1086a0d35c84a2181536aea8d689cf5694
             finish();
             startActivity(intent);
         }
