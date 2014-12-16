@@ -10,8 +10,13 @@
 * Compilée pour l'API SDK 21
 * Connexion et inscription sur le réseau Padawan
 * Authentification HTTP JSON
-* Interface inspirée de Facebook Android en 3 parties : mur, amis et messages
-* Menu latéral fluide pour accéder aux autres contenus, paramètre et se déconnecter
+* Interface inspirée de Facebook Android en 3 parties (actionBarTab) : mur, amis et messages
+* Menu latéral (navDrawer) fluide pour accéder aux autres contenus, paramètres et déconnexion
+
+### Détails Android ###
+
+* 3 activités
+* 3 fragments
 
 ### Screenshots ###
 
