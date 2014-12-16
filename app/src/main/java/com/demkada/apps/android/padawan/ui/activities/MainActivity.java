@@ -255,7 +255,11 @@ public class MainActivity extends FragmentActivity {
         // update the main content by replacing fragments
         Fragment fragment = null;
         FragmentActivity activity = null;
+<<<<<<< HEAD
+         Activity activite=null;
+=======
         Activity myActivity = null;
+>>>>>>> 1066db1086a0d35c84a2181536aea8d689cf5694
         switch (position) {
             case 0:
                 activity = new MainActivity();
@@ -274,7 +278,11 @@ public class MainActivity extends FragmentActivity {
                 //myActivity = new FeedsFragment();
                 break;
             case 5:
+<<<<<<< HEAD
+                activite = new LoginActivity();
+=======
                 myActivity = new LoginActivity();
+>>>>>>> 1066db1086a0d35c84a2181536aea8d689cf5694
                 break;
 
             default:
@@ -293,6 +301,16 @@ public class MainActivity extends FragmentActivity {
             mDrawerLayout.closeDrawer(mDrawerList);
         }
 
+<<<<<<< HEAD
+/*        else if(activity != null) {
+            Intent intent = new Intent(getApplicationContext(), activity.getClass());
+            finish();
+            startActivity(intent);
+        }*/
+
+        else if(activite != null) {
+            Intent intent = new Intent(getApplicationContext(), activite.getClass());
+=======
         else if(activity != null) {
             Intent intent = new Intent(getApplicationContext(), MainActivity.class);
             finish();
@@ -301,6 +319,7 @@ public class MainActivity extends FragmentActivity {
 
         else if(myActivity != null) {
             Intent intent = new Intent(getApplicationContext(), myActivity.getClass());
+>>>>>>> 1066db1086a0d35c84a2181536aea8d689cf5694
             finish();
             startActivity(intent);
         }
