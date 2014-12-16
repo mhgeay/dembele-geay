@@ -1,6 +1,7 @@
 package com.demkada.apps.android.padawan.ui.activities;
 
 import android.app.ActionBar;
+import android.app.Activity;
 import android.content.Intent;
 import android.content.res.Configuration;
 import android.content.res.TypedArray;
@@ -52,7 +53,7 @@ public class MainActivity extends FragmentActivity {
     private ViewPager viewPager;
     private TabsPagerAdapter mAdapter;
     private ActionBar actionBar;
-    private String[] tabs = { "Mûr", "Messages", "Amis" };
+    private String[] tabs = { "Mur", "Messages", "Amis" };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -194,7 +195,7 @@ public class MainActivity extends FragmentActivity {
 
         if (savedInstanceState == null) {
             // on first time display view for first nav item
-            displayView(0);
+            //displayView(0);
         }
     }
 
@@ -207,7 +208,7 @@ public class MainActivity extends FragmentActivity {
         public void onItemClick(AdapterView<?> parent, View view, int position,
                                 long id) {
             // display view for selected nav drawer item
-            //displayView(position);
+            displayView(position);
         }
     }
 
@@ -254,8 +255,10 @@ public class MainActivity extends FragmentActivity {
         // update the main content by replacing fragments
         Fragment fragment = null;
         FragmentActivity activity = null;
+        Activity myActivity = null;
         switch (position) {
             case 0:
+                activity = new MainActivity();
                 //fragment = new FeedsFragment();
                 break;
             case 1:
@@ -271,7 +274,7 @@ public class MainActivity extends FragmentActivity {
                 //fragment = new PagesFragment();
                 break;
             case 5:
-                //fragment = new WhatsHotFragment();
+                myActivity = new LoginActivity();
                 break;
 
             default:
@@ -289,13 +292,19 @@ public class MainActivity extends FragmentActivity {
             setTitle(navMenuTitles[position]);
             mDrawerLayout.closeDrawer(mDrawerList);
         }
-        /*
+
         else if(activity != null) {
-            Intent intent = new Intent(MainActivity.this, HomeActivity.class);
+            Intent intent = new Intent(getApplicationContext(), MainActivity.class);
             finish();
             startActivity(intent);
         }
-        */
+
+        else if(myActivity != null) {
+            Intent intent = new Intent(getApplicationContext(), myActivity.getClass());
+            finish();
+            startActivity(intent);
+        }
+
         else {
             // error in creating fragment
             Log.e("MainActivity", "Error in creating fragment");
