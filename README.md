@@ -10,5 +10,15 @@
 * Compilée pour l'API SDK 21
 * Connexion et inscription sur le réseau Padawan
 * Authentification HTTP JSON
-* Interface inspirée de Facebook Android
-** En 3 parties
+* Interface inspirée de Facebook Android en 3 parties : mur, amis et messages
+* Menu latéral fluide pour accéder aux autres contenus, paramètre et se déconnecter
+
+### Screenshots ###
+
+**Page de connexion**
+
+![screen1.png](https://bitbucket.org/repo/aeb84n/images/159729217-screen1.png)
+
+**Interface générale et panneau**
+
+![screen2.png](https://bitbucket.org/repo/aeb84n/images/3816771361-screen2.png)
